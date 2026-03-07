@@ -101,6 +101,7 @@ main .view1 .bottom .text button {
 @media (min-width: 900px) {
   main .view1 {
     flex-direction: row;
+    padding: 1rem 2rem;
   }
   main .view1 .top,
   main .view1 .bottom {
@@ -113,7 +114,7 @@ main .view1 .bottom .text button {
     padding: 3rem;
   }
   main .view1 .bottom .text h1 {
-    font-size: 3.5rem;
+    font-size: 3rem;
   }
   main .view1 .bottom .text p {
     font-size: 1.25rem;
