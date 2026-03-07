@@ -1,0 +1,138 @@
+@font-face {
+    font-family: headings;
+    src: url(resource/63cffc0a3942456e003bc265_Chillax-Regular.woff);
+}
+
+@font-face {
+    font-family: text;
+    src: url(resource/63cffc20aa8997095067596f_Satoshi-Light.woff);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+p {
+    font-family: text;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+html {
+    font-family: headings;
+    color: rgb(244, 244, 244);
+    font-size: clamp(14px, 1.5vw, 18px);
+}
+
+body {
+    background: #121212;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+@mixin flex-column($gap: 0rem) {
+    display: flex;
+    flex-direction: column;
+    gap: $gap;
+}
+
+section {
+    max-width: 2000px;
+}
+
+main {
+    width: 100%;
+    @include flex-column(0rem);
+    align-items: center;
+
+    .view1 {
+        width: 100%;
+        @include flex-column(1rem);
+        padding: 1rem;
+
+        .top {
+            width: 100%;
+
+            img {
+                border-radius: 10px;
+                width: 100%;
+            }
+        }
+
+        .bottom {
+            background: #1e1e1e;
+            border-radius: 10px;
+            @include flex-column(3.5rem);
+            justify-content: space-between;
+            padding: 2rem;
+
+            .text {
+                @include flex-column(0.7rem);
+
+                h1 {
+                    font-weight: 400;
+                    font-size: 2.6rem;
+                    text-transform: uppercase;
+                }
+
+                p {
+                    font-weight: 100;
+                    opacity: 0.6;
+                    font-size: 1.25rem;
+                    line-height: 1.5;
+                    letter-spacing: 1.8px;
+                }
+
+                button {
+                    border: none;
+                    outline: none;
+                    padding: 0.7rem 1rem;
+                    width: fit-content;
+                    border-radius: 0.4rem;
+                    margin-top: 10px;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width:900px) {
+    main {
+        .view1 {
+            flex-direction: row;
+            // align-items: stretch; 
+
+            .top,
+            .bottom {
+                width: 50%;
+            }
+             .top img {
+                height: 100%;
+                // object-fit: cover;
+            }
+
+            .bottom {
+                padding: 3rem;
+
+                .text {
+                    h1 {
+                        font-size: 3.5rem;
+                    }
+
+                    p {
+                        font-size: 1.25rem;
+                    }
+                }
+            }
+        }
+    }
+}
