@@ -153,7 +153,7 @@ main .view2 .bottom .element h2 {
   }
   main .view2 {
     flex-direction: row;
-    padding: 1rem 1rem;
+    padding: 1rem 2rem;
   }
   main .view2 .top .element h2,
   main .view2 .bottom .element h2 {
