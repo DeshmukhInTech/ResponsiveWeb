@@ -115,17 +115,18 @@ main {
             width: 100%;
             justify-content: space-around;
 
-            .element{
+            .element {
                 text-align: center;
                 @include flex-column(0.2rem);
 
-                small{
+                small {
                     opacity: 0.6;
                     letter-spacing: 1.2px;
-                    font-size: 1rem;
-                    font-family: Roboto Mono,sans-serif;
+                    font-size: 0.8rem;
+                    font-family: Roboto Mono, sans-serif;
                 }
-                h2{
+
+                h2 {
                     font-size: 2.75rem;
                     font-weight: 300;
                 }
@@ -166,9 +167,19 @@ main {
             }
         }
 
-        .view2{
+        .view2 {
             flex-direction: row;
-             padding: 1rem 2rem;
+            padding: 1rem 1rem;
+            // justify-content: space-between;
+
+            .top,
+            .bottom {
+                .element {
+                    h2 {
+                        font-size: 3.50rem;
+                    }
+                }
+            }
         }
     }
 }
