@@ -240,6 +240,88 @@ main {
         }
     }
 
+    .view5 {
+        width: 100%;
+        padding: 1rem;
+
+        h1 {
+            font-weight: 300;
+            font-size: 2.6rem;
+            padding: 0.8rem 0;
+        }
+
+        .team {
+            width: 100%;
+            @include flex-column(1rem);
+
+            .card {
+                background-position: center;
+                background-size: cover;
+                width: 100%;
+                padding: 1rem;
+                height: 400px;
+                border-radius: 10px;
+                @include flex-column(0);
+                justify-content: space-between;
+
+
+                .top {
+                    display: flex;
+                    align-items: center;
+                    justify-content: end;
+                    gap: 10px;
+
+                    i {
+                        font-size: 1rem;
+                        font-weight: lighter;
+                        color: #f7f7f7;
+                        background-color: rgba(0, 0, 0, 0.123);
+                        padding: 0.5rem;
+                        border-radius: 50%;
+                        border: 1px solid rgba(255, 255, 255, 0.15);
+                    }
+                }
+
+                .bottom {
+                    // width: 100%;
+                    display: flex;
+                    height: 80px;
+                    padding: 0.5rem 1rem;
+                    justify-content: space-between;
+                    background: rgba(3, 3, 3, 0.329);
+                    // background: #000000b2;
+                    border-radius: 10px;
+                    align-items: center;
+                    border: 1px solid #fff;
+
+                    h1 {
+                        font-size: 1.6rem;
+                    }
+
+                    p {
+                        font-weight: 400;
+                        font-size: 1rem;
+                        letter-spacing: 2px;
+                    }
+                }
+            }
+
+            .card:nth-child(1) {
+                background-image: url(resource/img4.png);
+            }
+
+            .card:nth-child(2) {
+                background-image: url(resource/img5.png);
+            }
+
+            .card:nth-child(3) {
+                background-image: url(resource/img6.png);
+            }
+
+        }
+
+    }
+
     .view6 {
         padding: 1rem;
         width: 100%;
@@ -394,6 +476,27 @@ main {
 
                     p {
                         font-size: 1rem;
+                    }
+                }
+            }
+        }
+
+        .view5 {
+            padding: 1rem 2rem;
+
+            .team {
+                flex-direction: row;
+
+                .card {
+                    .bottom {
+                        h1 {
+                            font-size: 1.3rem;
+                        }
+
+                        p {
+                            font-weight: 400;
+                            font-size: 0.8rem;
+                        }
                     }
                 }
             }
