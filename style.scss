@@ -229,12 +229,15 @@ main {
                     text-transform: uppercase;
                 }
 
-                p {
-                    font-weight: 100;
-                    opacity: 0.6;
-                    font-size: 1.25rem;
-                    line-height: 1.5;
-                    letter-spacing: 1.8px;
+                .para {
+                    p {
+                        font-weight: 100;
+                        opacity: 0.6;
+                        font-size: 1.25rem;
+                        line-height: 1.5;
+                        letter-spacing: 1.8px;
+                        display: inline;
+                    }
                 }
             }
         }
@@ -376,7 +379,7 @@ main {
     .view7 {
         width: 100%;
         padding: 1rem;
-        
+
         .section {
             @include flex-column(1rem);
             background: #cebd63;
@@ -387,6 +390,7 @@ main {
             .top {
                 width: 100%;
                 @include flex-column(1rem);
+
                 p {
                     font-weight: 200;
                     opacity: 1;
@@ -394,20 +398,22 @@ main {
                     line-height: 1.5;
                     letter-spacing: 1.8px;
                 }
-               h1 {
+
+                h1 {
                     font-weight: 400;
                     font-size: 3.6rem;
                     text-transform: uppercase;
                     line-height: 1;
                 }
             }
-            .bottom{
+
+            .bottom {
                 width: 100%;
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                
-                button{
+
+                button {
                     padding: 1.2rem 1rem;
                     width: 100%;
                     outline: none;
@@ -489,7 +495,7 @@ main {
 
                 .text {
                     h1 {
-                        font-size: 2rem;
+                        font-size: 2.2rem;
                     }
 
                     p {
@@ -519,11 +525,16 @@ main {
 
                 .text {
                     h1 {
-                        font-size: 2rem;
+                        font-size: 2.2rem;
                     }
 
-                    p {
-                        font-size: 1rem;
+                    .para {
+                        display: flex;
+                        gap: 1rem;
+
+                        p {
+                            font-size: 1rem;
+                        }
                     }
                 }
             }
@@ -567,31 +578,32 @@ main {
             .bottom {
                 .text {
                     h1 {
-                        font-size: 2rem;
+                        font-size: 2.2rem;
                     }
                 }
             }
         }
 
-        .view7{
-            .section{
+        .view7 {
+            .section {
                 flex-direction: row;
                 align-items: end;
 
-                .top{
+                .top {
                     width: 100%;
 
-                    h1{
+                    h1 {
                         font-size: 4rem;
                     }
                 }
-                .bottom{
+
+                .bottom {
                     width: 40%;
                     flex-direction: column;
                     justify-content: flex-end;
                     align-items: flex-end;
 
-                    button{
+                    button {
                         width: 60%;
                     }
                 }

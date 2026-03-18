@@ -223,12 +223,13 @@ main .view4 .bottom .text h1 {
   font-size: 2.6rem;
   text-transform: uppercase;
 }
-main .view4 .bottom .text p {
+main .view4 .bottom .text .para p {
   font-weight: 100;
   opacity: 0.6;
   font-size: 1.25rem;
   line-height: 1.5;
   letter-spacing: 1.8px;
+  display: inline;
 }
 main .view5 {
   width: 100%;
@@ -443,7 +444,7 @@ main .view7 .section .bottom button {
     padding: 3rem;
   }
   main .view3 .bottom .text h1 {
-    font-size: 2rem;
+    font-size: 2.2rem;
   }
   main .view3 .bottom .text p {
     font-size: 1rem;
@@ -465,9 +466,13 @@ main .view7 .section .bottom button {
     padding: 3rem;
   }
   main .view4 .bottom .text h1 {
-    font-size: 2rem;
+    font-size: 2.2rem;
   }
-  main .view4 .bottom .text p {
+  main .view4 .bottom .text .para {
+    display: flex;
+    gap: 1rem;
+  }
+  main .view4 .bottom .text .para p {
     font-size: 1rem;
   }
   main .view5 {
@@ -497,7 +502,7 @@ main .view7 .section .bottom button {
        object-fit: cover;
   }
   main .view6 .bottom .text h1 {
-    font-size: 2rem;
+    font-size: 2.2rem;
   }
   main .view7 .section {
     flex-direction: row;
