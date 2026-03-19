@@ -20,6 +20,7 @@ html,
 body {
   width: 100%;
   height: 100%;
+  scroll-behavior: smooth;
 }
 
 html {
@@ -251,7 +252,7 @@ main .view5 .team .card {
   background-size: cover;
   width: 100%;
   padding: 1rem;
-  height: 400px;
+  height: 500px;
   border-radius: 10px;
   display: flex;
   flex-direction: column;
@@ -265,11 +266,11 @@ main .view5 .team .card .top {
   gap: 10px;
 }
 main .view5 .team .card .top i {
-  font-size: 1rem;
+  font-size: 1.2rem;
   font-weight: lighter;
   color: #f7f7f7;
   background-color: rgba(0, 0, 0, 0.123);
-  padding: 0.5rem;
+  padding: 0.8rem;
   border-radius: 50%;
   border: 1px solid rgba(255, 255, 255, 0.15);
 }
@@ -397,6 +398,101 @@ main .view7 .section .bottom button {
   border-radius: 10px;
   letter-spacing: 1.4px;
 }
+main .view8 {
+  width: 100%;
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas: "f-logo f-logo" "f-links f-links" "f-text f-text";
+  gap: 1rem;
+}
+main .view8 .f-logo {
+  grid-area: f-logo;
+  background: #1e1e1e;
+  border-radius: 10px;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  justify-content: space-between;
+}
+main .view8 .f-logo h2 {
+  font-size: 1.5rem;
+  font-weight: 100;
+}
+main .view8 .f-logo i {
+  font-size: 1.2rem;
+  font-weight: lighter;
+  color: #f7f7f7;
+  background-color: rgba(0, 0, 0, 0.123);
+  padding: 0.8rem;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+}
+main .view8 .f-links {
+  grid-area: f-links;
+  background: #1e1e1e;
+  border-radius: 10px;
+  padding: 2rem;
+  display: flex;
+  justify-content: space-between;
+}
+main .view8 .f-links .links {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+main .view8 .f-links .links h2 {
+  font-weight: 100;
+  font-size: 20px;
+}
+main .view8 .f-links .links p {
+  display: inline-block;
+  color: rgba(247, 247, 247, 0.5960784314);
+  text-transform: uppercase;
+  font-size: 12px;
+  font-family: text;
+  letter-spacing: 2px;
+  cursor: pointer;
+}
+main .view8 .f-links .links p:hover {
+  color: #f7f7f7;
+}
+main .view8 .f-links .links button {
+  padding: 1rem 2rem;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  background: #cebd63;
+  font-family: text;
+  letter-spacing: 2px;
+}
+main .view8 .f-text {
+  grid-area: f-text;
+  background: #1e1e1e;
+  border-radius: 10px;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+}
+main .view8 .f-text p {
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+main .view8 .f-text a {
+  color: #fff;
+  font-size: 1rem;
+}
+main .view8 .f-text a i {
+  font-size: 1rem;
+  font-weight: lighter;
+  color: #f7f7f7;
+  background-color: rgba(0, 0, 0, 0.123);
+  padding: 0.5rem;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  margin-left: 5px;
+}
 
 @media (min-width: 900px) {
   main .view1 {
@@ -481,6 +577,9 @@ main .view7 .section .bottom button {
   main .view5 .team {
     flex-direction: row;
   }
+  main .view5 .team .card {
+    height: 400px;
+  }
   main .view5 .team .card .bottom h1 {
     font-size: 1.3rem;
   }
@@ -522,5 +621,26 @@ main .view7 .section .bottom button {
   }
   main .view7 .section .bottom button {
     width: 60%;
+  }
+  main .view8 {
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 3fr 0.2fr;
+    grid-template-areas: "f-logo f-links" "f-logo f-text";
+  }
+  main .view8 .f-links {
+    padding: 2rem 3rem;
+  }
+  main .view8 .f-links button {
+    margin-top: 20px;
+    font-weight: 700;
+  }
+  main .view8 .f-text p {
+    font-size: 0.8rem;
+  }
+  main .view8 .f-text a {
+    font-size: 0.8rem;
+  }
+  main .view8 .f-text a i {
+    font-size: 0.8rem;
   }
 }
